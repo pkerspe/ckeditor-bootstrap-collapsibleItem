@@ -18,7 +18,7 @@ CKEDITOR.dtd.$editable.span = 1;
 
 CKEDITOR.plugins.add('collapsibleItem', {
     requires: 'widget',
-    icons: 'collapsibleItem',
+    icons: 'collapsibleitem',
     init: function (editor) {
         editor.widgets.add('collapsibleItem', {
             button: 'Insert Collapsible Item',
