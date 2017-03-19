@@ -16,6 +16,12 @@ Adds a new icon to your toolbar:
 
 ![Editor toolbar and usage example](./doc/images/ckeditor-collapsible-item-editor-view.png?raw=true "Editor toolbar and usage example")
 
+# Installation
+to install manually download all files and store to a newly created folder called "collapsibleItem" inside ckeditors plugins directory.
+Then add the following line to your config.js (or extend an existing one with the plugin name):
+
+`config.extraPlugins = 'collapsibleItem';`
+
 # Version history:  
 
 - __V 0.1__: First version with basic functionality
