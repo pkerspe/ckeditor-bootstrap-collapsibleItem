@@ -12,7 +12,7 @@ Allows drag and drop placement of created items in the editor.
 Works together with the __Bootstrap Accordion List__ plugin to create __Accordion List / panel groups__ (see @https://github.com/pkerspe/ckeditor-bootstrap-accordionList)
 
 Adds a new icon to your toolbar: 
-![icon](./icons/collapsibleItem.png?raw=true "icon in toolbar")
+![icon](./icons/collapsibleItem.png?raw=true =50x50 "icon in toolbar")
 
 ![Editor toolbar and usage example](https://raw.githubusercontent.com/pkerspe/ckeditor-bootstrap-collapsibleItem/master/doc/images/ckeditor-collapsible-item-editor-view.png?raw=true "Editor toolbar and usage example")
 
