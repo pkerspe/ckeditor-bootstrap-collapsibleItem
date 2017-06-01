@@ -14,7 +14,7 @@ function getCollapsibleItem() {
     return collapsibleItem;
 }
 
-CKEDITOR.dtd.$editable.span = 1;
+CKEDITOR.dtd.$editable.a = 1;
 
 CKEDITOR.plugins.add('collapsibleItem', {
     requires: 'widget',
@@ -26,7 +26,7 @@ CKEDITOR.plugins.add('collapsibleItem', {
             template: getCollapsibleItem(),
             editables: {
                 title: {
-                    selector: '.collapsible-item-title-link-text',
+                    selector: '.collapsible-item-title-link',
                     allowedContent: 'strong em u span'
                 },
                 content: {
