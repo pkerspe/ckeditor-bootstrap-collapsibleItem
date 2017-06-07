@@ -96,6 +96,7 @@ CKEDITOR.plugins.add('collapsibleItem', {
 
     onLoad: function () {
         CKEDITOR.addCss(
+            'a.collapsible-item-title-link { display: block; }' +
             '.collapsible-item::before {font-size:10px;color:#000;content: "Bootstrap collapsible element"}' +
             '.collapsible-item-heading {background-color:#f4f8ef;color:#72b73a;text-decoration:none;font-size:20px;} ' +
             '.collapsible-item-collapse {display:block;background-color:#ddd;min-height:10px;} ' +
