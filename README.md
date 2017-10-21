@@ -21,7 +21,3 @@ to install manually download all files and store to a newly created folder calle
 Then add the following line to your config.js (or extend an existing one with the plugin name):
 
 `config.extraPlugins = 'collapsibleItem';`
-
-# Version history:  
-
-- __V 0.1__: First version with basic functionality
