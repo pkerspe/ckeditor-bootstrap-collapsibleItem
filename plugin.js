@@ -27,7 +27,7 @@ CKEDITOR.plugins.add('collapsibleItem', {
             editables: {
                 title: {
                     selector: '.collapsible-item-title-link',
-                    allowedContent: 'strong em u span'
+                    allowedContent: 'span strong em u;*{color}'
                 },
                 content: {
                     selector: '.collapsible-item-body',
