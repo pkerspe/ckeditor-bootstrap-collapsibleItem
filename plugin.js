@@ -44,7 +44,7 @@ CKEDITOR.plugins.add('collapsibleItem', {
                 var accordionid = "";
                 if(editor.elementPath() != null) {
                     var parents = editor.elementPath().elements;
-                    for (i = 0; i < parents.length; i++) {
+                    for (var i = 0; i < parents.length; i++) {
                         if (parents[i].hasClass('accordion-list-group')) {
                             accordionid = parents[i].getId();
                             break;
@@ -53,15 +53,19 @@ CKEDITOR.plugins.add('collapsibleItem', {
                 }
                 if(accordionid == ""){
                     var parents = this.element.getParents();
-                    for(i = 0 ; i < parents.length ; i++){
+                    for(var i = 0 ; i < parents.length ; i++){
                         if(parents[i].hasClass('accordion-list-group')){
                             accordionid = parents[i].getId();
                             break;
                         }
                     }
                 }
+                var uniqueIdentifier = [
+                    (new Date()).getTime(),
+                    ('' + 1e6 * Math.random()).substring(0, 6)
+                ].join('_');
                 this.setData('accordionId', accordionid);
-                this.setData('itemId', 'Collapsible' + (new Date()).getTime());
+                this.setData('itemId', 'Collapsible' + uniqueIdentifier);
             },
             data: function () {
                 //called whenever the data is updated
