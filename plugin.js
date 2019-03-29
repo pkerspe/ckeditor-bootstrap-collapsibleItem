@@ -62,7 +62,7 @@ CKEDITOR.plugins.add('collapsibleItem', {
                 }
                 var uniqueIdentifier = [
                     (new Date()).getTime(),
-                    ('' + 1e6 * Math.random()).substring(0, 6)
+                    Math.floor(Math.random() * (1e6 - 1e5 - 1)) + 1e5
                 ].join('_');
                 this.setData('accordionId', accordionid);
                 this.setData('itemId', 'Collapsible' + uniqueIdentifier);
